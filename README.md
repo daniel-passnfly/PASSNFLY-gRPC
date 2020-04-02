@@ -33,8 +33,9 @@ $ tree -L 3 -I "venv|__pycache__" .
 
 ### To run
 ```
-$ tree -L 3 -I "venv|__pycache__" .
+$ make run
 ``
+
 
 ### Usage
 #### Users
