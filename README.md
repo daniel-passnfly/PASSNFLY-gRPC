@@ -3,12 +3,22 @@
 Contents:
 
 ```
-$ tree -L 2 demo1
-demo1
+$ tree -L 3 -I "venv|__pycache__" .
 ├── grpc-services
 │   ├── client_wrapper.py
 │   ├── protos
+│   │   ├── airlines
+│   │   ├── build.sh
+│   │   ├── cleanup.sh
+│   │   ├── gen-py
+│   │   └── users
 │   └── users
+│       ├── run-server.sh
+│       ├── sample_client_demo.py
+│       ├── sample_client_demo_timeout.py
+│       ├── sample_client.py
+│       └── server
+├── README.md
 ├── requirements.txt
 └── webapp
     ├── app.py
