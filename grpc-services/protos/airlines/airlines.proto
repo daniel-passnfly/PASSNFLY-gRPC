@@ -1,0 +1,7 @@
+syntax = "proto3";
+import "airlines_types.proto";
+
+service Airlines {
+  rpc GetAirline (airlines.GetAirlineRequest) returns (airlines.GetAirlineResult);
+  rpc GetAirlines (airlines.NoParameters) returns (stream airlines.GetAirlineResult);
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+package airlines;
+
+message NoParameters {}
+
+message Airline {
+  string icao = 1;
+  string iata = 2;
+  string name = 3;
+}
+
+message GetAirlineRequest {
+  string icao = 1;
+  string iata = 2;
+}
+
+message GetAirlineResult {
+  Airline airline = 1;
+}
+
+message GetAirlinesResult {
+  repeated Airline airline = 1;
+}

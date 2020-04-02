@@ -1,0 +1,17 @@
+click
+Flask
+greenlet
+grpcio
+grpcio-tools
+itsdangerous
+Jinja2
+MarkupSafe
+msgpack-python
+neovim
+pip
+protobuf
+setuptools
+six
+Werkzeug
+sqlalchemy
+pymysql
