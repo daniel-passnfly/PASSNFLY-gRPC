@@ -1,7 +1,8 @@
-from flask import Flask, Response, jsonify, json
 import sys
 
-sys.path.extend(['../grpc-services/protos/gen-py', '../grpc-services'])
+from flask import Flask, jsonify, json
+
+sys.path.extend(['../grpc-services/protos/gen-py', '../grpc-services', 'grpc-services', 'grpc-services/protos/gen-py'])
 from google.protobuf.json_format import MessageToJson
 from client_wrapper import ServiceClient
 
@@ -42,7 +43,6 @@ def airline_get(icao, iata):
     response = app.config['airlines'].GetAirline(request)
     json.loads(MessageToJson(response.airline))
     return jsonify(json.loads(MessageToJson(response.airline)))
-
 
 
 @app.route('/airlines/')

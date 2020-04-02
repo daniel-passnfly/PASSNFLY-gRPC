@@ -2,7 +2,7 @@ import sys
 import time
 from concurrent import futures
 
-sys.path.append('../../protos/gen-py')
+sys.path.extend(['../../protos/gen-py', 'grpc-services/protos/gen-py'])
 import grpc
 import sqlalchemy as db
 from sqlalchemy.orm import sessionmaker

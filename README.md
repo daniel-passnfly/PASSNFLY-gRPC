@@ -31,3 +31,15 @@ $ tree -L 3 -I "venv|__pycache__" .
 - `webapp`: A simple Flask application which interfaces with the `users` service
 
 
+### To run
+```
+$ tree -L 3 -I "venv|__pycache__" .
+``
+
+### Usage
+#### Users
+* http://localhost:5000/users/
+
+#### Airlines
+* http://localhost:5000/airline/RYR/FR
+* http://localhost:5000/airlines/

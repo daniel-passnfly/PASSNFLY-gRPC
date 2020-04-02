@@ -1,3 +1,3 @@
 #!/bin/bash
 
-PYTHONPATH=../protos/gen-py python server/server.py
+PYTHONPATH=../protos/gen-py python grpc-services/users/server/server.py
