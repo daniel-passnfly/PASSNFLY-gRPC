@@ -1,6 +1,6 @@
-## Demo 1
+Documentation found: https://github.com/amitsaha/python-grpc-demo
 
-Contents:
+## Contents:
 
 ```
 $ tree -L 3 -I "venv|__pycache__" .
